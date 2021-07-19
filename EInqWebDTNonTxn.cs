@@ -202,7 +202,7 @@ namespace EInqWebDTNonTxnClass
 
 
         //MODIFIES: XML Response , pbisEmpty, pbsuccessIndicator
-        //EFFECTS: displays file last uploaded in PATUSERFILES
+        //EFFECTS: displays file last uploaded by the user in PATUSERFILES
         public XmlNode View_Uploaded_File(string psConnStr, ref bool pbsuccessIndicator, 
                                           ref bool pbisEmpty, ref Byte[] fileData)
         {
