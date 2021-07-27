@@ -26,11 +26,11 @@ The data access layer of the web service is split into two separate entity class
 viewing the cart, fetching available parts) respectively. All transactions are rolled-back when an exception occurs. 
 Exceptions that occur while rolling back transactions are also handled.
 
-Properties of most tables used in SQL queries are also provided. The SQL stored procedure "DTPartsSelection" was written to
-suit the company's needs. It can be replaced by a simpler SQL select statement that just fetches all data from the sample
-PATPARTDATA table. Sample test records have been to PATPARTDATA and PATCART. This web service currently only authorizes one
-user but it can easily be optimized to authorize more users by storing user data in the SQL database and following the web 
-service's existing authentication procedures.
+Properties of most tables used in SQL queries are provided for reference. The SQL stored procedure "DTPartsSelection" was 
+written to suit the company's needs. It can be replaced by a simpler SQL select statement that just fetches all data from
+the sample PATPARTDATA table. Sample test records have been to PATPARTDATA and PATCART. This web service currently only 
+authorizes one user but it can easily be optimized to authorize more users by storing user data in the SQL database and 
+following the web service's existing authentication procedures.
 
 
 
