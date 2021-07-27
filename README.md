@@ -20,6 +20,11 @@ functions of this web service include:
 4. Edit existing parts in the cart (change the quantity and remarks provided for each item)
 5. Upload a Know Your Customer form (pdf file), view the uploaded file, and retrieve it later from the SQL database
    for customer verification
+   
+The data access layer of the web service is split into two separate entity classes that handle transactional activities
+(adding/modifying/deleting parts from the cart, uploading a file) and non-transactional activities (viewing uploaded files,
+viewing the cart, fetching available parts) respectively. All transactions are rolled-back when an exception occurs. 
+Exceptions that occur while rolling back transactions are also handled.
 
 The SQL stored procedure "DTPartsSelection" can be replaced by a less complex procedure that just fetches data from a single table. 
 A sample for the same is provided. Properties of most tables used in SQL queries are also provided. This web service currently
