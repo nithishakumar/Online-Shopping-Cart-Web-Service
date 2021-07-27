@@ -14,9 +14,9 @@ message, error messages specific to some exceptions - like the client’s inabil
 specific part number, invalid quantity, etc. - are caught from the web service and displayed on the test web page. The main 
 functions of this web service include:
 
-1. Fetching part details from the SQL database
-2. Selecting and adding parts to a cart
-3. Displaying existing items in the cart (data of parts added to the cart is retained even from previous sessions)
+1. Fetch part details from the SQL database
+2. Select and add parts to a cart
+3. Display existing items in the cart (data of parts added to the cart is retained even from previous sessions)
 4. Edit existing parts in the cart (change the quantity and remarks provided for each item)
 5. Upload a Know Your Customer form (pdf file), view the uploaded file, and retrieve it later from the SQL database
    for customer verification
