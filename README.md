@@ -21,6 +21,8 @@ functions of this web service include:
 5. Upload a Know Your Customer form (pdf file), view the uploaded file, and retrieve it later from the SQL database
    for customer verification
    
+   ![image](https://user-images.githubusercontent.com/73742037/128419217-0804ad8a-101e-44cd-b355-8510bf01c944.png)
+   
 The data access layer of the web service is split into two separate entity classes that handle transactional activities
 (adding/modifying/deleting parts from the cart, uploading a file) and non-transactional activities (viewing uploaded files,
 viewing the cart, fetching available parts) respectively. All transactions are rolled-back when an exception occurs. 
